@@ -111,9 +111,13 @@ input:invalid + label::after{
 
   span{
     position: relative;
+    font-size: 0.75rem;
+    width: max-content;
+    color: red;
   }
 
   /*
+  https://www.bram.us/2021/01/28/form-validation-you-want-notfocusinvalid-not-invalid/
   The difficulty is that invalid message in shown:
   - right at load of the form
         Bc it is empty and is required
@@ -127,10 +131,24 @@ input:invalid + label::after{
   
   
   */
-  Input:not(:focus):invalid + span:after{
+  Input[type="text"]:not(:focus):not(:placeholder-shown):invalid + span:after{
     position: absolute;
     bottom: 39px;
     left: 150px;
-    content: "Incorrect";
-    border: 2px solid red;
+    content: "Only letters allowed";
   }
+
+  Input[type="email"]:not(:focus):not(:placeholder-shown):invalid + span:after{
+    position: absolute;
+    bottom: 39px;
+    left: 150px;
+    content: "Should be as example@email.com";
+  }
+  
+  Input[type="password"]:not(:focus):not(:placeholder-shown):invalid + span:after{
+    position: absolute;
+    bottom: 39px;
+    left: 150px;
+    content: "Please enter a field";
+  }
+ 
