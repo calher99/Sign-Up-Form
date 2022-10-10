@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+
 body{
-    overflow: auto;
     display:flex;
     height: 100vh;
+    margin: 0;
+    font-family: 'Comfortaa' , sans-serif;
 }
 @font-face {
     font-family: norse-bold;
@@ -14,6 +17,10 @@ body{
     background-repeat: no-repeat;
     position: relative;
   
+}
+.form-container{
+    width: 65vw;
+    padding: 20px;
 }
 
 .hero-text{
@@ -42,6 +49,46 @@ img{
     width: 100%;
     text-align: center;
 }
-a { 
+
+a{ 
     color: inherit; 
 } 
+
+.introduction{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+/*Reset properties*/
+button,
+label,
+input {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0;
+  box-sizing: border-box;
+  
+  padding: 5px;
+  height: 30px;
+  display: block;
+}
+button{
+    width: 30%;
+}
+
+label, input{
+    width: 70%;
+}
+.inputs{
+    display: flex;
+    flex-direction: column;
+
+}
+.inputs>div{
+    display: flex;
+    width: 100%;
+}
+/*So that the divs occupy all the space in an equal proportion*/
+.inputs>div>div{
+    flex-grow: 1;
+    
+}
