@@ -1,10 +1,38 @@
 body{
     overflow: auto;
     display:flex;
+    height: 100vh;
+}
+@font-face {
+    font-family: norse-bold;
+    src: url(./fonts/Norse-Bold.otf);
 }
 .image-container{
     width: 35vw;
     background-image: url(./images/halie-west-25xggax4bSA-unsplash.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+  
 }
+
+.hero-text{
+    display: flex;
+  height: 200px;
+  justify-content: center;
+  align-items: center;
+
+}
+h1{
+    font-family: 'norse-bold';
+    font-size: 7rem;
+    color: white;
+}
+img{
+    width: 120px;
+    height: 150px;
+}
+
+.credit{
+    color: white;
+}
+a { color: inherit; } 
