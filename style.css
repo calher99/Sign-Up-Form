@@ -12,15 +12,17 @@ body{
     background-image: url(./images/halie-west-25xggax4bSA-unsplash.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    position: relative;
   
 }
 
 .hero-text{
     display: flex;
-  height: 200px;
-  justify-content: center;
-  align-items: center;
-
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20vh;
+    background-color: rgba(0,0,0,0.5);
 }
 h1{
     font-family: 'norse-bold';
@@ -34,5 +36,12 @@ img{
 
 .credit{
     color: white;
+    position: absolute;
+    bottom: 0;
+    padding: 1rem;
+    width: 100%;
+    text-align: center;
 }
-a { color: inherit; } 
+a { 
+    color: inherit; 
+} 
