@@ -1,8 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap');
 body{
     display:flex;
-    height: 100vh;
     margin: 0;
     font-family: 'Comfortaa' , sans-serif;
 }
@@ -20,7 +19,7 @@ body{
 }
 .form-container{
     width: 65vw;
-    padding: 20px;
+    background-color: #f5f7f9;
 }
 
 .hero-text{
@@ -58,6 +57,11 @@ a{
     font-size: 1.5rem;
     font-weight: bold;
     margin-top: 50px;
+    padding: 20px;
+}
+
+.form{
+    
 }
 /*Reset properties*/
 button,
@@ -71,9 +75,6 @@ input {
   height: 30px;
   display: block;
 }
-button{
-    width: 30%;
-}
 
 label, input{
     width: 70%;
@@ -82,6 +83,10 @@ label, input{
     display: flex;
     flex-direction: column;
     gap: 10px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 5px 10px #E5E7EB;
+    
 }
 .inputs>div{
     display: flex;
@@ -94,6 +99,10 @@ label, input{
 
 .button{
     margin-top: 50px;
+    padding: 20px;
+}
+input{
+    border: 1px solid #E5E7EB;
 }
 
 input:focus{
@@ -114,6 +123,7 @@ input:invalid + label::after{
     font-size: 0.75rem;
     width: max-content;
     color: red;
+    white-space: nowrap /* avoid text wrap in span*/
   }
 
   /*
@@ -150,5 +160,21 @@ input:invalid + label::after{
     bottom: 39px;
     left: 150px;
     content: "Please enter a field";
+  }
+
+  button {
+    border-radius: 5px;
+    background-color: #596D48;
+    border: none;
+    width: 20%;
+    height: 40px;
+    color: white;
+    font-weight: bold;
+    box-shadow: 0px 0px 15px 2px #bdbdbf;
+  }
+
+  p>a{
+    color: #596D48;
+    font-weight:700;
   }
  
