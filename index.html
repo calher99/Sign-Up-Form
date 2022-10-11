@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
     <title>Sign-up form</title>
 </head>
 <body>
@@ -26,8 +27,8 @@
         </div>
         <div class="form">
             <form action="">
-                <p>Let's do this!</p>
                 <div class="inputs">
+                    <p>Let's do this!</p>
                         <div>
                         <div>
                             <label for="name">FIRST NAME: *</label>
@@ -79,7 +80,8 @@
                             <input 
                                 type="password" 
                                 id="password" 
-                                name="userPassword" 
+                                name="userPassword"
+                                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
                                 required
                                 placeholder=" ">
                             <span></span>
@@ -89,7 +91,8 @@
                             <input 
                                 type="password" 
                                 id="passwordConf" 
-                                name="userPasswordConf" 
+                                name="userPasswordConf"
+                                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
                                 required
                                 placeholder=" ">
                             <span></span>
