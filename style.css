@@ -3,6 +3,7 @@
 body{
     display:flex;
     margin: 0;
+    min-height: 100vh;
     font-family: 'Comfortaa' , sans-serif;
 }
 @font-face {
@@ -54,9 +55,9 @@ a{
 } 
 
 .introduction{
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: bold;
-    margin-top: 50px;
+    margin-top: 3%;
     padding: 20px;
 }
 
@@ -157,9 +158,9 @@ input:invalid + label::after{
   
   Input[type="password"]:not(:focus):not(:placeholder-shown):invalid + span:after{
     position: absolute;
-    bottom: 39px;
-    left: 150px;
-    content: "Please enter a field";
+    bottom: -17px;
+    left: 0px;
+    content: "Must contain number,uppercase,lowercase and 8 or more characters";
   }
 
   button {
