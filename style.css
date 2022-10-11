@@ -119,7 +119,7 @@ input:invalid + label::after{
 */
  
 
-  span{
+  .invalidMessage{
     position: relative;
     font-size: 0.75rem;
     width: max-content;
@@ -161,9 +161,13 @@ input:invalid + label::after{
     bottom: -17px;
     left: 0px;
     content: "Must contain number,uppercase,lowercase and 8 or more characters";
-  }
+}
 
-  button {
+Input:not(:focus):not(:placeholder-shown):invalid{
+    border: 1px solid red;
+}
+
+button {
     border-radius: 5px;
     background-color: #596D48;
     border: none;
@@ -174,8 +178,27 @@ input:invalid + label::after{
     box-shadow: 0px 0px 15px 2px #bdbdbf;
   }
 
-  p>a{
+p>a{
     color: #596D48;
     font-weight:700;
   }
- 
+
+.passwordContainer{
+    position: relative;
+
+}
+
+.checkPass{
+    position: absolute;
+    top: 44%;
+    left: 72%;
+  }
+
+.addedIcon{
+    height: 30px;
+    width: 30px;
+    border: none;
+    
+}
+
+
