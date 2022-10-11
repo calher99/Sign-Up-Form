@@ -40,7 +40,7 @@
                                 placeholder=" "
                                 pattern="^[^0-9]+$" 
                                 maxlength="245">
-                            <span></span>
+                            <span class="invalidMessage"></span>
                         </div> 
                         <div>
                             <label for="lastName">LAST NAME: *</label>
@@ -52,7 +52,7 @@
                                 placeholder=" "
                                 pattern="^[^0-9]+$" 
                                 maxlength="245">
-                            <span></span>
+                            <span class="invalidMessage"></span>
                         </div>
                         </div>
                         <div>
@@ -64,7 +64,7 @@
                                 name="userEmail" 
                                 required
                                 placeholder="example@email.com">
-                            <span></span>
+                            <span class="invalidMessage"></span>
                         </div>
                         <div>
                             <label for="phone">PHONE NUMBER:</label>
@@ -75,7 +75,7 @@
                         </div>
                         </div>
                         <div>
-                        <div>
+                        <div class="passwordContainer">
                             <label for="password">PASSWORD: *</label>
                             <input 
                                 type="password" 
@@ -84,9 +84,9 @@
                                 pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
                                 required
                                 placeholder=" ">
-                            <span></span>
+                            <span class="invalidMessage"></span>
                         </div> 
-                        <div>
+                        <div class="passwordContainer">
                             <label for="passwordConf">CONFIRM PASSWORD: *</label>
                             <input 
                                 type="password" 
@@ -95,7 +95,8 @@
                                 pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
                                 required
                                 placeholder=" ">
-                            <span></span>
+                            <span class="invalidMessage"></span>
+                            <span class="checkPass"></span>
                         </div>
                         </div>
                 </div>
