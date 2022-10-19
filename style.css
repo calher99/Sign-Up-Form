@@ -142,21 +142,21 @@ input:invalid + label::after{
   
   
   */
-  Input[type="text"]:not(:focus):not(:placeholder-shown):invalid + span:after{
+  Input[type="text"]:not(:focus):not(:placeholder-shown):invalid + span::after{
     position: absolute;
     bottom: 39px;
     left: 150px;
     content: "Only letters allowed";
   }
 
-  Input[type="email"]:not(:focus):not(:placeholder-shown):invalid + span:after{
+  Input[type="email"]:not(:focus):not(:placeholder-shown):invalid + span::after{
     position: absolute;
     bottom: 39px;
     left: 150px;
     content: "Should be as example@email.com";
   }
   
-  Input[type="password"]:not(:focus):not(:placeholder-shown):invalid + span:after{
+  Input[type="password"]:not(:focus):not(:placeholder-shown):invalid + span::after{
     position: absolute;
     bottom: -17px;
     left: 0px;
